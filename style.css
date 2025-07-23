@@ -149,6 +149,54 @@ nav a {
   color: #555;
   max-width: 600px;
 }
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.header img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+.badge {
+  position: absolute;
+  width: 80px;
+  margin-left: 200px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content ul {
+  margin-top: 10px;
+}
+.latest-section {
+  text-align: center;
+  margin-top: 40px;
+}
+.latest-section h2 {
+  font-size: 24px;
+}
+.latest-section h2 span {
+  color: orange;
+}
+.latest-section p {
+  margin: 10px auto;
+  color: #555;
+  max-width: 600px;
+}
+. img {
+  width: 100%;
+  height: 100%;
+}
 .deals {
   display: flex;
   flex-wrap: wrap;
@@ -168,6 +216,7 @@ nav a {
   height: 100%;
   object-fit: cover;
 }
+
 .deal-text {
   position: absolute;
   top: 50%;
@@ -177,4 +226,69 @@ nav a {
   text-align: center;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+.subscribe-section {
+  background: url("subscribe-background.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+.subscribe-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.subscribe-box {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.subscribe-box input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.subscribe-box button {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.footer {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 10%;
+  font-size: 14px;
+}
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+.footer img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
 }
