@@ -70,7 +70,8 @@ nav a {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
+
+  gap: 10px;
   padding: 30px 50px;
 }
 
@@ -78,7 +79,7 @@ nav a {
   background: white;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
@@ -104,3 +105,58 @@ nav a {
   font-size: 13px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.header img {
+  width: 250px;
+  height: auto;
+  border-radius: 5px;
+}
+.badge {
+  position: absolute;
+  width: 80px;
+  margin-left: 200px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content ul {
+  margin-top: 10px;
+}
+.latest-section {
+  text-align: center;
+  margin-top: 40px;
+}
+.latest-section h2 {
+  font-size: 24px;
+}
+.latest-section h2 span {
+  color: orange;
+}
+.latest-section p {
+  margin: 10px auto;
+  color: #555;
+  max-width: 600px;
+}
+.deals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.deal-item {
+  height: 50%;
+}
