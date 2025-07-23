@@ -70,13 +70,14 @@ nav a {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   padding: 30px 50px;
 }
 
 .product-card {
-  background: white;
+  grid-template-columns: repeat(4, 1fr);
+
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -165,6 +166,7 @@ nav a {
   width: 250px;
   height: auto;
   border-radius: 5px;
+  justify-content: space-between;
 }
 .badge {
   position: absolute;
@@ -227,8 +229,84 @@ nav a {
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+.container {
+  position: relative;
+
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.header img {
+  position: relative;
+  width: 50%;
+}
+.badge {
+  width: 250px;
+  width: 250px;
+  position: absolute;
+  top: -5t0px;
+  right: -10px;
+  transform: translate(-0% -100%);
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.content ul {
+  margin-top: 10px;
+}
+.latest-section {
+  text-align: center;
+  margin-top: 40px;
+}
+.latest-section h2 {
+  font-size: 24px;
+}
+.latest-section h2 span {
+  color: orange;
+}
+.latest-section p {
+  margin: 10px auto;
+  color: #555;
+  max-width: 600px;
+}
+.deals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.deal-item {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.deal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.deal-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
 .subscribe-section {
-  background: url("subscribe-background.jpg") no-repeat center center/cover;
+  background: url("assets/news-letter-bg.png") no-repeat center center/cover;
   text-align: center;
   padding: 80px 20px;
   color: white;
@@ -259,6 +337,7 @@ nav a {
   font-size: 16px;
   cursor: pointer;
 }
+
 .footer {
   background-color: white;
   display: flex;
@@ -269,6 +348,7 @@ nav a {
 }
 .footer-column {
   flex: 1;
+  gap: 10px;
   min-width: 150px;
   margin-bottom: 20px;
 }
@@ -291,4 +371,14 @@ nav a {
 .social-icons img {
   width: 24px;
   height: 24px;
+}
+.subscribe-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
