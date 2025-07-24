@@ -20,7 +20,7 @@ header {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   color: #ff6f00;
 }
@@ -113,34 +113,47 @@ nav a {
   margin: 0 auto;
   padding: 30px 0;
 }
-.header {
+.head {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
 }
-.header img {
-  width: 250px;
+.head img {
+  width: 300px;
   height: auto;
   border-radius: 5px;
 }
+.header img {
+  width: 300px;
+  height: 300px;
+}
 .badge {
-  position: absolute;
+  position: absolut;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -170%);
+
+  width: 50px;
+  margin-left: 200px;
+}
+
+.badge img {
   width: 100px;
-  margin-left: 200px;
 }
 .title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
 }
 .content ul {
   margin-top: 10px;
+  font-size: 20px;
 }
 .latest-section {
   text-align: center;
   margin-top: 40px;
 }
 .latest-section h2 {
-  font-size: 24px;
+  font-size: 40px;
 }
 .latest-section h2 span {
   color: orange;
@@ -149,60 +162,11 @@ nav a {
   margin: 10px auto;
   color: #555;
   max-width: 600px;
-}
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-.header {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-.header img {
-  width: 250px;
-  height: auto;
-  border-radius: 5px;
-  justify-content: space-between;
-}
-.badge {
-  position: absolute;
-  width: 80px;
-  margin-left: 200px;
-}
-.title {
-  font-size: 24px;
-  font-weight: bold;
-}
-.content ul {
-  margin-top: 10px;
-}
-.latest-section {
-  text-align: center;
-  margin-top: 40px;
-}
-.latest-section h2 {
-  font-size: 24px;
-}
-.latest-section h2 span {
-  color: orange;
-}
-.latest-section p {
-  margin: 10px auto;
-  color: #555;
-  max-width: 600px;
-}
-. img {
-  width: 100%;
-  height: 100%;
 }
 .deals {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  display: grid;
+
+  gap: 10px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -214,9 +178,8 @@ nav a {
   border-radius: 10px;
 }
 .deal-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  display: grid;
+  width: 300px;
 }
 
 .deal-text {
@@ -229,82 +192,7 @@ nav a {
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
-.container {
-  position: relative;
 
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 0;
-}
-.header {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-.header img {
-  position: relative;
-  width: 50%;
-}
-.badge {
-  width: 250px;
-  width: 250px;
-  position: absolute;
-  top: -5t0px;
-  right: -10px;
-  transform: translate(-0% -100%);
-}
-.title {
-  font-size: 24px;
-  font-weight: bold;
-}
-.content ul {
-  margin-top: 10px;
-}
-.latest-section {
-  text-align: center;
-  margin-top: 40px;
-}
-.latest-section h2 {
-  font-size: 24px;
-}
-.latest-section h2 span {
-  color: orange;
-}
-.latest-section p {
-  margin: 10px auto;
-  color: #555;
-  max-width: 600px;
-}
-.deals {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.deal-item {
-  position: relative;
-  width: 300px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.deal-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.deal-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
 .subscribe-section {
   background: url("assets/news-letter-bg.png") no-repeat center center/cover;
   text-align: center;
